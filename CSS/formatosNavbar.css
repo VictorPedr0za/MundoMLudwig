@@ -1,0 +1,85 @@
+
+
+.mi-navbar {
+  background-color: #0091ff; /* tu color personalizado */
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mi-navbar .navbar-title {
+  font-family: 'Georgia', serif;
+  font-size: 6rem;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+  .hero-header {
+  height: 100vh;
+  background-color: #86592D;
+  padding: 40px 20px;
+  color: white;
+}
+
+.hero-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; /* Imagen redonda */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.hero-title {
+  font-family: 'Georgia', serif;
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+@media (min-width: 768px) {
+  .hero-img {
+    width: 260px;
+    height: 260px;
+  }
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+.btn-autores {
+  background-color: #c2c2c2; /* tu color personalizado */
+  color: #000000;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 8px 16px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-autores:hover {
+  background-color: #e3a100;
+  color: white;
+}
+
+.btn-juego {
+  background-color: #ff00aa;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-juego i {
+  margin-right: 8px;
+}
+
+.btn-juego:hover {
+  background-color: #e60095;
+}

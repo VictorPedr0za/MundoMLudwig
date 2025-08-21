@@ -1,0 +1,41 @@
+<!--
+    Author(a): Juan Jose Cardona
+    Date of the creation: 09/08/2025
+    Last Modification: 09/08/2025
+
+    Recurda el truco de ctrol+D
+
+-->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mundo Ludwig – Juego</title>
+  <link rel="shortcut icon" href="./src/img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="./CSS/juego.css" />
+
+  <!-- Import map: resuelve 'three' y sus addons (GLTFLoader, etc.) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.156.1/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.156.1/examples/jsm/"
+    }
+  }
+  </script>
+
+  <!-- Canciones (NO módulo) -->
+  <script src="./src/js/canciones.js"></script>
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+
+  <a href="menu.html" class="btn-volver" aria-label="Volver al menú">
+    <i class="bi bi-arrow-left"></i> Volver
+  </a>
+
+  <!-- Tu lógica del juego como módulo -->
+  <script type="module" src="./src/js/juego.js"></script>
+</body>
+</html>

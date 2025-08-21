@@ -1,0 +1,285 @@
+<!--
+    Author(a): Juan Jose Cardona
+    Date of the creation: 05/08/2025
+    Last Modification: 05/08/2025
+
+    Recurda el truco de ctrol+D
+
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Ludwig</title>
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="../src/img/view_in_ar_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" type="image/png" />
+    <!--Bootstrap.css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Bootstrap.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Bootstrap popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <!--Importar Modelo-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <!--js-->
+    <script src="./src/js/vectorCalcular.js"></script>
+
+    <!--formato navbar-->
+    <link rel="stylesheet" href="./CSS/formatosNavbar.css">
+
+    <!--Importar iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body style="background-color: #1a1a1a;">
+    
+  <header class="hero-header d-flex flex-column align-items-center text-center" 
+    style="height: 100vh; 
+           background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001), rgb(0, 0, 0)), 
+                             url('./src/img/Ludwig ByN.jpg'); 
+           background-size: cover; 
+           background-position: center; 
+           background-repeat: no-repeat; 
+           color: white; 
+           position: relative; 
+           padding: 20px;">
+
+    <h1 class="hero-title" 
+        style="position: relative; 
+               z-index: 1; 
+               font-size: 5rem; 
+               margin-top: auto; 
+               margin-bottom: 100px;">
+        El Mundo Musical de Ludwig Göransson
+    </h1>
+</header>
+
+
+    <section style="background-color: #000000;">
+        <br><br>
+        <div class="container text-center">
+
+            <!-- Bloque 1 -->
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div style="background-color: #121212; border-radius: 30px; padding: 20px; box-shadow: 2px 2px 8px rgba(255,255,255,0.2);">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <h3 class="mb-3" style="font-family: 'Georgia', serif; font-size: 3rem; letter-spacing: 1.5px; color: #ffffff; text-shadow: 2px 2px 3px rgba(255,255,255,0.3); font-style: italic;">
+                                        ¿Cómo encontró su camino?
+                                    </h3>
+                                    <p style="text-align: justify; color: #f0f0f0;">
+                                        La página web Everyday Organic Sounds (2019) menciona que el compositor al crecer en Suecia le benefició mucho en su carrera, debido a que la música se encuentra muy desarrollada en la nación, existiendo muchas escuelas de dicha área. Durante sus años en un instituto local, tuvo la oportunidad de componer una música para una orquesta profesional, según él, al escuchar a la orquesta tocar la canción que él había escrito lo cambió por completo, dándole el deseo de volver a repetir esa emoción una y otra vez.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <model-viewer 
+                                        src="./src/3Dmodels/Notes/notes.glb" 
+                                        alt="SuperMarioShyGuy"
+                                        style="height: 100vh; width: 100%; position: relative; background: #121212"
+                                        autoplay auto-rotate ar shadow-intensity="1" camera-controls touch-action="pan-y">
+                                    </model-viewer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloque 2 -->
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div style="background-color: #121212; border-radius: 30px; padding: 20px; box-shadow: 2px 2px 8px rgba(255,255,255,0.2);">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 order-md-1">
+                                    <model-viewer 
+                                        src="./src/3Dmodels/Bomb/Bomb.glb" 
+                                        alt="SuperMarioShyGuy"
+                                        style="height: 100vh; width: 100%; position: relative; background: #121212"
+                                        autoplay auto-rotate ar shadow-intensity="1" camera-controls touch-action="pan-y">
+                                    </model-viewer>
+                                </div>
+                                <div class="col-md-6 order-md-2">
+                                    <h3 class="mb-3" style="font-family: 'Georgia', serif; font-size: 3rem; letter-spacing: 1.5px; color: #ffffff; text-shadow: 2px 2px 3px rgba(255,255,255,0.3); font-style: italic;">
+                                        Oppenheimer
+                                    </h3>
+                                    <p style="text-align: justify; color: #f0f0f0;">
+                                        Ludwig ya había trabajado junto a Nolan, anteriormente en la composición de la pélicula de Tennet, según la página web El Cine de LoQueYoTeDiga (2023), Gorrasson quería capturar las escenas de científicos y políticos discutiendo en habitaciones, en el artículo se menciona que “Parte del mérito, a pesar de que Nolan está obsesionado con el ritmo de sus películas, es de la partitura de Göransson, que tiembla y retumba, construyendo y construyendo hacia un clímax infinito.”
+                                    </p>
+                                    <p style="text-align: justify; color: #f0f0f0;">
+                                        Por otro lado, Ludwig inicialmente comenzó a trabajar en la composición sin tener ningún elemento visual en mente con el propósito de capturar la esencia de los momentos emocionales de la película, de tal forma que su composición tuviera un proceso diferente al de su trabajo habitual. Para el compositor era importante que primero se obtuviera la melodía y el núcleo emocional, para luego construir el ritmo con ayuda de sintetizadores. Esto lo hizo teniendo en mente de que ha medida que avanzara la película, la producción musical aumentará a la par.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloque 3 -->
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div style="background-color: #121212; border-radius: 30px; padding: 20px; box-shadow: 2px 2px 8px rgba(255,255,255,0.2);">
+                        <div class="card-header" style="background-color: #121212; font-family: 'Georgia', serif; font-size: 3rem; letter-spacing: 1.5px; color: #ffffff; text-shadow: 2px 2px 3px rgba(255,255,255,0.3); font-style: italic;">
+                            El Violín
+                        </div>
+                        <div class="card-body" style="color: #f0f0f0; text-align: justify;">
+                            <p>
+                                El elemento principal a nivel instrumental fue el violín, tanto para Ludwig y Nolan. Por un lado Göransson trabajó junto a su esposa, Serena, durante la composición del filme gracias a que ella es violinista, esto no solo les permitió trabajar juntos, también les facilitó experimentar con la melodía de la composición.
+                                <br><br>
+                                Por otro lado, el director de la película, Christopher Nolan tenía la intención de tomar el violín para poder darle un toque único al filme, a su vez que era una forma metafórica de representar el comportamiento y carácter neurótico de Oppenheimer. A si mismo Nolan describe el violín como un instrumento que puede entregar melodías de tonos románticos y hermosos para luego pasar a un tono deprimente y desgarrador.
+                            </p>
+                            <model-viewer 
+                                src=".//src/3Dmodels/Violin/violin.glb" 
+                                alt="SuperMarioShyGuy"
+                                style="height: 100vh; width: 100%; position: relative; background: #121212"
+                                autoplay auto-rotate ar shadow-intensity="1" camera-controls touch-action="pan-y">
+                            </model-viewer>
+                            <p>
+                                “Seis notas como núcleo del tema del violín...
+                            </p>
+                        </div>
+                    </div>
+                    <br><br>
+
+           <!--bloque 4 -->         
+                    <div style="background-color: #121212; border-radius: 30px; padding: 20px; box-shadow: 2px 2px 8px rgba(255,255,255,0.2);">
+                        <div class="card-header" style="background-color: #121212; font-family: 'Georgia', serif; font-size: 3rem; letter-spacing: 1.5px; color: #ffffff; text-shadow: 2px 2px 3px rgba(255,255,255,0.3); font-style: italic;">
+                             Creed
+                        </div>
+                        <div class="card-body" style="color: #f0f0f0; text-align: justify;">
+                            <p>
+                                Creed es una película de boxeo que continúa la saga de Rocky, la película es dirigida por Ryan Coogler, según Newcott. B (2015), en esta película el hijo del amigo de Rocky, Apollo Creed, busca su ayuda para que lo entrene a ser un boxeador. Esta película ha ganado 4  premios de los American Music Award.
+                                <br><br>
+                                Para la composición de Creed, según la página de Everyday Organic Sounds (2019), Ludwig fue a un club de boxeo, donde pasó dos días junto a un boxeador con el fin de ver su rutina de entrenamiento. Junto a su equipo de grabación capturaron todos los ruidos producidos por el ambiente, para que más tarde con todos esos elementos los convirtió la banda sonora para la película, para que en palabras de Ludwig, “crear un paisaje sonoro personalizado”.
+                            </p>
+                            <model-viewer 
+                                src="./src/3Dmodels/Creed/ring creed.glb" 
+                                alt="SuperMarioWorldMap"
+                                style="height: 100vh; width: 100%; position: relative; background: #121212"
+                                autoplay auto-rotate ar shadow-intensity="1" camera-controls touch-action="pan-y">
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-2"></div>
+            </div>
+<div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                    <!-- Contenedor común con fondo y bordes redondeados -->
+                    <div style="background-color: #121212; border-radius: 30px; padding: 20px; box-shadow: 2px 2px 8px rgba(245, 245, 245, 0.2);">
+                        <div class="row align-items-center">
+                        <!-- Modelo a la izquierda -->
+                        <div class="col-md-6 order-md-1">
+                            <model-viewer 
+                            src="./src/3Dmodels/Tenet/TennetRocaV2.glb" 
+                            alt="Bomb"
+                            style="height: 100vh; width: 100%; position: relative; background: #121212"
+                            autoplay
+                            auto-rotate 
+                            ar 
+                            shadow-intensity="1" 
+                            camera-controls 
+                            touch-action="pan-y">
+                            </model-viewer>
+                        </div>
+
+                        <!-- Texto a la derecha -->
+                        <div class="col-md-6 order-md-2">
+                            <h3 class="mb-3" style="font-family: 'Georgia', 'Garamond', serif; font-size: 3rem; letter-spacing: 1.5px; color: rgb(255, 255, 255); text-shadow: 2px 2px 3px rgb(255, 255, 255); font-style: italic;">
+                            Tenet
+                            </h3>
+                            <p style="text-align: justify; color: rgb(255, 255, 255);">
+                            En 2009 comenzó a componer la música de la serie "Community". En la universidad Göransson conoció a Ryan Coogler, donde compuso su primer cortometraje, "Fig", y después colaborarían en "Fruitvale Station", "Creed" y "Black Panther", la película que le dio el Oscar a mejor música. Desde entonces, ha trabajado con Childish Gambino o con las hermanas Haim como productor musical, y también ha compuesto "Tenet". Que es una película que cuenta con mucha percusión. Como la mayoría de películas de hoy en día.
+                            </p>
+                            <br>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bloque 5 -->
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div style="background-color: #121212; border-radius: 30px; padding: 20px; box-shadow: 2px 2px 8px rgba(255,255,255,0.2);">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <h3 class="mb-3" style="font-family: 'Georgia', serif; font-size: 3rem; letter-spacing: 1px; color: #ffffff; text-shadow: 2px 2px 3px rgba(255,255,255,0.3); font-style: italic;">
+                                        El Mandaloriano
+                                    </h3>
+                                    <p style="text-align: justify; color: #f0f0f0;">
+                                        El universo de Star Wars significó mucho para la infancia de Ludwig, según la página web de Sonos (2025) cuando Göransson fue contratado para componer la banda sonora de la serie de Disney Plus, El Mandaloriano, quiso usar un toque orgánico de música, donde afirmó que “quería conectarme con lo que sentí cuando era niño y vi Star Wars por primera vez, La única forma de revivir ese sentimiento fue alejándome de la computadora y usando instrumentos reales, instrumentos que pudiera tocar”.
+
+A si mismo, Ludwig decidió usar la flauta como parte de la banda sonora, ya que según el compositor “Tenía un sonido realmente único que me atrapó en seguida”. Por lo que comenzó a experimentar con ella, con la cual formó las primeras notas del Mandaloriano. Por otro lado Göransson comentó que la esencia musical que el equipo de Lucasfilm quería transmitir era de un viaje solitario. Para esto Ludwig encaminó su propio viaje donde se la pasaría rodeado sólo en sus estudios llenos de instrumentos, donde el compositor menciona haber estado “Básicamente estuve un mes encerrado en mi estudio, yendo de un instrumento a otro”.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <model-viewer 
+                                        src="./src/3Dmodels/Mandaloriano/mandalorian_helmet.glb" 
+                                        alt="SuperMarioShyGuy"
+                                        style="height: 100vh; width: 100%; position: relative; background: #121212"
+                                        autoplay auto-rotate ar shadow-intensity="1" camera-controls touch-action="pan-y">
+                                    </model-viewer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <br><br><br>
+
+    <button type="button" class="btn btn-autores position-fixed"
+            style="bottom: 20px; left: 20px; z-index: 1050; background-color:#333; color:#fff;" 
+            data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Autores
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color:#121212; color:#fff;">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Autores</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Estudiantes:<br>
+                    Juan José Cardona Serna<br>
+                    30000121143
+                    <br><br>
+                    Victor Manuel Pedroza<br>
+                    30000120825
+                    <br><br>
+                    Docente:<br>
+                    Juan Manuel Fajardo.<br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="menu.html">
+        <button type="button" class="btn btn-juego position-fixed"
+            style="bottom: 20px; right: 20px; z-index: 1050; background-color:#ff00aa; color:white;">
+            <i class="bi bi-music-note-beamed"></i> 
+        </button>
+    </a>
+
+</body>
+</html>
